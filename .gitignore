@@ -1,0 +1,5 @@
+*.DS_Store
+*.log
+*.tar.gz
+containers/mysql/initdb.d/*
+!containers/mysql/initdb.d/.gitkeep
