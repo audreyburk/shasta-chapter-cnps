@@ -11,3 +11,16 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+
+// template-tags line 73
+function anther_posted_by() {
+  global $post;
+
+  $byline = get_post_meta($post->ID, 'byline', true);
+  if ($byline) {
+    printf( '<span class="byline entry-meta-icon">%1$s <span class="author vcard"><span class="entry-author-name">%2$s</span></span></span>',
+      esc_html_x( 'by', 'post author', 'anther' ),
+      esc_html( $byline )
+    );
+  }
+}

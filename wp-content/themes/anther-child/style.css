@@ -2,3 +2,22 @@
  Theme Name:   Anther Child
  Template:     anther
 */
+
+.wp-block-image figcaption {
+  margin-top: 6px;
+  color: #555;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+/*--------------------------------------------------------------
+18.2 - Medium devices (tablets, 768px and up)
+  Anther line 3677
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .wp-block-image figcaption {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
