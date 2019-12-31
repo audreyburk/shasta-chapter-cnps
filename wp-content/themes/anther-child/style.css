@@ -3,6 +3,7 @@
  Template:     anther
 */
 
+.entry-image-wrapper-single figcaption,
 .wp-block-image figcaption {
   margin-top: 6px;
   color: #555;
@@ -21,6 +22,7 @@
   line 3677
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
+  .entry-image-wrapper-single figcaption,
   .wp-block-image figcaption {
     font-size: 14px;
     font-size: 0.875rem;

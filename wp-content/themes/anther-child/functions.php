@@ -24,3 +24,21 @@ function anther_posted_by() {
     );
   }
 }
+
+// template-tags line 261
+function anther_post_thumbnail_single() {
+  if (
+    is_singular( 'post' ) && ! anther_mod( 'anther_content_options_featured_image_post' ) ||
+    is_singular( 'page' ) && ! anther_mod( 'anther_content_options_featured_image_page' )
+  ) {
+    return;
+  }
+
+  if ( anther_has_post_thumbnail() ) {
+    printf(
+      '<div class="entry-image-wrapper-single"><figure class="post-thumbnail">%1$s</figure><figcaption>%2$s</figcaption></div>',
+      get_the_post_thumbnail( null, 'anther-featured-single', array( 'class' => 'img-featured img-responsive' ) ),
+      get_the_post_thumbnail_caption()
+    );
+  }
+}
