@@ -11,9 +11,14 @@
   line-height: 1.6;
 }
 
+/* line 3495 */
+.img-featured:hover {
+  opacity: 1;
+}
+
 /*--------------------------------------------------------------
 18.2 - Medium devices (tablets, 768px and up)
-  Anther line 3677
+  line 3677
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
   .wp-block-image figcaption {
