@@ -3,3 +3,9 @@
 *.tar.gz
 containers/mysql/initdb.d/*
 !containers/mysql/initdb.d/.gitkeep
+
+wp-content/plugins/hello.php
+
+wp-content/themes/*
+!wp-content/themes/anther
+!wp-content/themes/anther-child
