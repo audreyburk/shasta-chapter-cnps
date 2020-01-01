@@ -21,7 +21,6 @@ services:
         $$table_prefix  = '_ZH0_';
     volumes:
       - ./wp-content:/var/www/html/wp-content:delegated
-      # - ./wp-config.php:/var/www/html/wp-config.php
 
   db:
     image: mariadb:10.4.11-bionic

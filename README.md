@@ -15,4 +15,11 @@ https://shasta-cnps.org
 
 ## Deployment
 
-0.
+0. Dry run: `rsync -auvn --exclude-from .rsyncignore ./wp-content/ shastacn@162.241.217.132:/home3/shastacn/public_html/wp-content/`
+0. If it looks good, run it without the `-n`!
+
+## To-do & tech debt
+
+0. Add syncing (download) instructions
+0. Use composer to manage plugins
+0. Move code in `functions.php` to site-specific plugin
