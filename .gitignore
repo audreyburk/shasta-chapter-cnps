@@ -6,7 +6,7 @@ containers/mysql/initdb.d/*
 
 wp-content/plugins/hello.php
 
-# wp-content/uploads/**
+wp-content/uploads/**
 
 wp-content/themes/*
 !wp-content/themes/anther
